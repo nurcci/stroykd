@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер Строй - Тротуарная плитка</title>
+    <link rel="stylesheet" href="../STROYKD/STYLE.CSS">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__info">
+                <div class="header__contact">
+                    <img src="../STROYKD/images/3586361-location-map-navigation-pointer_107948 1.png" alt="Иконка местоположения" class="header__icon">
+                    <p>Волоколамский район, <br>пос. Чисмена, ул. Центральная, 1</p>
+                </div>
+                <div class="header__contact">
+                    <img src="../STROYKD/images/Vector.png" alt="Иконка часов" class="header__icon">
+                    <p>Режим работы: <br>с 8:00 до 20:00</p>
+                </div>
+                <div class="header__contact">
+                    <img src="../STROYKD/images/phone-call-auricular-symbol-in-black_icon-icons.com_56483 1.png" alt="Иконка телефона" class="header__icon">
+                    <p>+7 (926) 105-94-14<br>+7 (910) 470-67-97</p>
+                    <p>+7 (499) 994-90-99</p>
+                </div>
+            </div>
+            
+            <div class="header__right">
+                <button class="header__callback">Заказать звонок</button>
+                <button class="burger-menu" aria-label="Меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li><a href="#about" class="mobile-nav__link">О компании</a></li>
+                <li><a href="#services" class="mobile-nav__link">Укладка тротуарной плитки</a></li>
+                <li><a href="#portfolio" class="mobile-nav__link">Портфолио</a></li>
+                <li><a href="#info" class="mobile-nav__link">Полезно знать</a></li>
+                <li><a href="#delivery" class="mobile-nav__link">Доставка и оплата</a></li>
+                <li><a href="#contacts" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+            
+            burger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+            
+            // Закрытие меню при клике на ссылку
+            const navLinks = document.querySelectorAll('.mobile-nav__link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    burger.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+        });
+        </script>
+    <nav class="nav">
+        <div class="container nav__container">
+            
+            <ul class="nav__list">
+                <li><img src="../STROYKD/images/Rectangle 2.png" alt="Логотип Мастер Строй" class="header__logo"></li>
+                <li><a href="#about" class="nav__link">О компании</a></li>
+                <li><a href="#services" class="nav__link">Укладка тротуарной плитки</a></li>
+                <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                <li><a href="#info" class="nav__link">Полезно знать</a></li>
+                <li><a href="#delivery" class="nav__link">Доставка и оплата</a></li>
+                <li><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero__container">
+            <h1 class="hero__title">Тротуарная плитка в Волоколамске<br>напрямую от производителя</h1>
+            <p class="hero__text">Вам нужна качественная и недорогая тротуарная плитка в Волоколамске? Мы готовы предложить отличную возможность приобрести современные модели с высокими показателями эстетики и механической стойкости напрямую от производителя – компании «Мастер Строй».</p>
+            <a href="#" class="hero__button">Каталог</a>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="section__title">Каталог продукции</h2>
+            <div class="catalog__grid">
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 20.png" alt="Прессованная плитка" class="catalog__image">
+                    <h3 class="catalog__item-title">Прессованная плитка</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 21.png" alt="Строительные блоки" class="catalog__image">
+                    <h3 class="catalog__item-title">Строительные блоки</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 22.png" alt="Вибролитая плитка" class="catalog__image">
+                    <h3 class="catalog__item-title">Вибролитая плитка</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 23.png" alt="Фасадная плитка" class="catalog__image">
+                    <h3 class="catalog__item-title">Фасадная плитка</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 28.png" alt="Садовый бордюр" class="catalog__image">
+                    <h3 class="catalog__item-title">Садовый бордюр</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 29.png" alt="Водостоки тротуарные" class="catalog__image">
+                    <h3 class="catalog__item-title">Водостоки тротуарные</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 30.png" alt="Дорожный бордюр" class="catalog__image">
+                    <h3 class="catalog__item-title">Дорожный бордюр</h3>
+                </div>
+                <div class="catalog__item">
+                    <img src="../STROYKD/images/Rectangle 31.png" alt="Крышки на столбы" class="catalog__image">
+                    <h3 class="catalog__item-title">Крышки на столбы</h3>
+                </div>
+            </div>
+            <a href="#" class="catalog__button">Больше товаров</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about__container">
+            <h2 class="about__title">О нас</h2>
+            <div class="about__content">
+                <img src="../STROYKD/images/Rectangle 45.png" alt="О нас" class="about__image">
+                <div class="about__text-block">
+                    <h3 class="about__subtitle">«Мастер Строй» - надежная и недорогая тротуарная плитка в Волоколамском районе</h3>
+                    <div class="about__text-columns">
+                        <p class="about__text">Наша компания готова помочь вам и с первым и со вторым аспектом данной задачи. В нашем каталоге вы сможете подобрать желаемый вариант материала и сразу заказать профессиональную укладку на вашем участке.</p>
+                        <p class="about__text">Если вам нужна надежная тротуарная плитка, купить в Волоколамском районе такой материал можно у нас, цена продукции из каталога вас приятно удивит и не ударит по бюджету.</p>
+                    </div>
+                    <div class="about__footer">
+                        <p class="about__footer-text">Теперь если вам нужна тротуарная плитка, вы знаете где ее можно приобрести «Мастер Строй» - компанию производитель, которая гарантирует достойный уровень качества по принятым цене.</p>
+                        <p class="about__company">ООО «МАСТЕР СТРОЙ»</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="about__button">Приобрести</a>
+        </div>
+    </section>
+
+    <section class="products" id="services">
+        <div class="container">
+            <h2 class="section__title">Топ товаров</h2>
+            <div class="products__grid">
+                <div class="product-card">
+                    <!-- Восстановлено исходное изображение, но путь может быть заглушкой -->
+                    <img src="../STROYKD/images/Rectangle 35.png" alt="Брусчатка 200x100x50" class="product-card__image">
+                    <h3 class="product-card__title">Брусчатка 200x100x50</h3>
+                    <p class="product-card__info">Размер: 200x100x50мм</p>
+                    <p class="product-card__info">Количество: 50 пар шт/кв.м</p>
+                    <p class="product-card__info">Цвета в наличии: 8</p>
+                    <ul class="product-card__prices">
+                        <li>Серый: 440 руб/кв.м</li>
+                        <li>Красный: 500 руб/кв.м</li>
+                        <li>Коричневый: 550 руб/кв.м</li>
+                        <li>Желтый: 700 руб/кв.м</li>
+                        <li>Другие цвета: по запросу</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/Rectangle 36.png" alt="Шестигранник 250x220x70" class="product-card__image">
+                    <h3 class="product-card__title">Шестигранник 250x220x70</h3>
+                    <p class="product-card__info">Размер: 250x220x70мм</p>
+                    <p class="product-card__info">Количество: 21 шт/кв.м</p>
+                    <p class="product-card__info">Цвета в наличии: 8</p>
+                    <ul class="product-card__prices">
+                        <li>Серый: 470 руб/кв.м</li>
+                        <li>Красный: 530 руб/кв.м</li>
+                        <li>Коричневый: 590 руб/кв.м</li>
+                        <li>Желтый: по запросу</li>
+                        <li>Другие цвета: 510 руб/кв.м</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/Rectangle 37.png" alt="Катушка 250x160x60" class="product-card__image">
+                    <h3 class="product-card__title">Катушка 250x160x60</h3>
+                    <p class="product-card__info">Размер: 250x160x60мм</p>
+                    <p class="product-card__info">Количество: 30 шт/кв.м</p>
+                    <p class="product-card__info">Цвета в наличии: 8</p>
+                    <ul class="product-card__prices">
+                        <li>Серый: 440 руб/кв.м</li>
+                        <li>Красный: 500 руб/кв.м</li>
+                        <li>Коричневый: 550 руб/кв.м</li>
+                        <li>Желтый: 700 руб/кв.м</li>
+                        <li>Другие цвета: по запросу</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/Rectangle 38.png" alt="Плитка квадрат 330x330x60" class="product-card__image">
+                    <h3 class="product-card__title">Плитка квадрат 330x330x60</h3>
+                    <p class="product-card__info">Размер: 330x330x60мм</p>
+                    <p class="product-card__info">Количество: 9 шт/кв.м</p>
+                    <p class="product-card__info">Цвета в наличии: 8</p>
+                    <ul class="product-card__prices">
+                        <li>Серый: 440 руб/кв.м</li>
+                        <li>Красный: 500 руб/кв.м</li>
+                        <li>Коричневый: 550 руб/кв.м</li>
+                        <li>Желтый: 700 руб/кв.м</li>
+                        <li>Другие цвета: по запросу</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/Rectangle 39.png" alt="Кирпичик 250x125x60" class="product-card__image">
+                    <h3 class="product-card__title">Кирпичик 250x125x60</h3>
+                    <p class="product-card__info">Размер: 250x125x60мм</p>
+                    <p class="product-card__info">Количество: 32 шт/кв.м</p>
+                    <p class="product-card__info">Цвета в наличии: 8</p>
+                    <ul class="product-card__prices">
+                        <li>Серый: 440 руб/кв.м</li>
+                        <li>Красный: 500 руб/кв.м</li>
+                        <li>Коричневый: 550 руб/кв.м</li>
+                        <li>Желтый: 700 руб/кв.м</li>
+                        <li>Другие цвета: по запросу</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <img src="./images/Rectangle 39.png" alt="Волна 250x125x60" class="product-card__image">
+                    <h3 class="product-card__title">Волна 250x125x60</h3>
+                    <p class="product-card__info">Размер: 250x125x60мм</p>
+                    <p class="product-card__info">Количество: 32/40 шт/кв.м</p>
+                    <p class="product-card__info">Цвета в наличии: 8</p>
+                    <ul class="product-card__prices">
+                        <li>Серый: 450 руб/кв.м</li>
+                        <li>Красный: 500 руб/кв.м</li>
+                        <li>Коричневый: 550 руб/кв.м</li>
+                        <li>Желтый: 700 руб/кв.м</li>
+                        <li>Другие цвета: по запросу</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="production" id="delivery">
+        <div class="container production__container">
+            <h2 class="section__title">О производстве</h2>
+            <div class="production__content">
+                <div class="production__info">
+                    <div class="production__item">
+                        <img src="../STROYKD/images/Frame 2.png" alt="Иконка доставки" class="production__icon">
+                        <p>Доставка и разгрузка плитки краном-манипулятором</p>
+                    </div>
+                    <div class="production__item">
+                        <img src="../STROYKD/images/8.png" alt="Иконка плитки" class="production__icon">
+                        <p>Множество видов тротуарной плитки различной формы и фактуры</p>
+                    </div>
+                    <div class="production__item">
+                        <img src="../STROYKD/images/quality_award_icon_152104 2.png" alt="Иконка качества" class="production__icon">
+                        <p>Весь товар сертифицирован! Официальная гарантия!</p>
+                    </div>
+                </div>
+                <img src="../STROYKD/images/Rectangle 15.png " alt="Производство плитки" class="production__image">
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section__title">Наши работы</h2>
+            <p class="portfolio__text">Отделка участка, сада, входной группы или любой другой частной территории требует большого внимания со стороны владельца, поскольку именно эти зоны являются «лицом», а значит и престижем вашего дома или коммерческого объекта.</p>
+            <div class="portfolio__grid">
+                <img src="../STROYKD/images/Rectangle 33.png" alt="Пример работы 1" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 34.png" alt="Пример работы 2" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 35.png" alt="Пример работы 3" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 36.png" alt="Пример работы 4" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 37.png" alt="Пример работы 5" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 38.png" alt="Пример работы 6" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 39.png" alt="Пример работы 7" class="portfolio__image">
+                <img src="../STROYKD/images/Rectangle 40.png" alt="Пример работы 8" class="portfolio__image">
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" id="info">
+        <div class="container">
+            <h2 class="section__title">Наши преимущества</h2>
+            <div class="advantages__grid">
+                <div class="advantage-card">
+                    <img src="../STROYKD/images/builder-27_icon-icons.com_60366 1.svg" alt="Иконка ассортимента" class="advantage-card__icon">
+                    <h3 class="advantage-card__title">Широкий ассортимент</h3>
+                    <p class="advantage-card__text">Тротуарная плитка от производителя в широком ассортименте.</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="../STROYKD/images/clipboard_120835 1.svg" alt="Иконка доставки" class="advantage-card__icon">
+                    <h3 class="advantage-card__title">Быстрая доставка</h3>
+                    <p class="advantage-card__text">Быстрая и удобная доставка по Волоколамскому району.</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="../STROYKD/images/mbricash_99554 1.svg" alt="Иконка стоимости" class="advantage-card__icon">
+                    <h3 class="advantage-card__title">Доступная цена</h3>
+                    <p class="advantage-card__text">Демократичная стоимость продукции.</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="../STROYKD/images/mbridelivery_99588 1.svg" alt="Иконка качества" class="advantage-card__icon">
+                    <h3 class="advantage-card__title">Контроль качества</h3>
+                    <p class="advantage-card__text">Безупречный контроль качества продукции.</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="../STROYKD/images/user-4_icon-icons.com_63829 1.svg" alt="Иконка сервиса" class="advantage-card__icon">
+                    <h3 class="advantage-card__title">Высокий сервис</h3>
+                    <p class="advantage-card__text">Высокий уровень обслуживания клиентов.</p>
+                </div>
+                <div class="advantage-card">
+                    <img src="../STROYKD/images/quality_award_icon_152104 1.svg" alt="Иконка специалистов" class="advantage-card__icon">
+                    <h3 class="advantage-card__title">Профессионалы</h3>
+                    <p class="advantage-card__text">Услуги команды опытных специалистов по монтажу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container footer__container">
+            <div class="footer__contact">
+                <img src="group3.svg" alt="Иконка часов" class="footer__icon">
+                <p>Режим работы: с 8:00 до 20:00</p>
+            </div>
+            <div class="footer__contact">
+                <img src="group4.svg" alt="Иконка телефона" class="footer__icon">
+                <p>+7 (926) 105-94-14<br>+7 (910) 470-67-97<br>+7 (499) 994-90-99</p>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__title">Магазин</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Петрсональный раздел</a></li>
+                    <li><a href="#" class="footer__link">Акции</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__title">Каталог</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Тротуарная плитка</a></li>
+                    <li><a href="#" class="footer__link">Бордюры</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__title">Сервисы</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Укладка брусчатки</a></li>
+                    <li><a href="#" class="footer__link">Доставка</a></li>
+                    <li><a href="#" class="footer__link">Дизайн-проект</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__title">О компании</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Завод BRAER</a></li>
+                    <li><a href="#" class="footer__link">Портфолио</a></li>
+                    <li><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </div>
+            <p class="footer__copy">© 2022 ООО "Мастер строй"</p>
+        </div>
+    </footer>
+</body>
+</html>
