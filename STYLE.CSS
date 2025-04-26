@@ -208,7 +208,7 @@ body {
 }
 
 .hero {
-  background: url('../STROYKD/images/Rectangle 5 (1).png') no-repeat center/cover;
+  background: url('./images/Rectangle 5 (1).png') no-repeat center/cover;
   color: #fff;
   padding: 100px 0;
   text-align: center;
